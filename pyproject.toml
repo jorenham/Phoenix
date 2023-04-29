@@ -1,6 +1,7 @@
 [build-system]
 requires = [
-    "setuptools>61", 
+    "setuptools>=61.0",
+    "buildtools",
     "wheel",
     "cython>=0.29.32,<0.30",
     "appdirs", 
