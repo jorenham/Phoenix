@@ -1,7 +1,6 @@
 [build-system]
 requires = [
     "setuptools>=61.0",
-    "buildtools",
     "wheel",
     "cython>=0.29.32,<0.30",
     "appdirs", 
@@ -11,5 +10,6 @@ requires = [
     "pillow", 
     "six",
     "requests",
+    "attrdict3",
 ]
 build-backend = "setuptools.build_meta"
