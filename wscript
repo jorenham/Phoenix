@@ -535,7 +535,7 @@ def build(bld):
         msg("**** Compiler: {}\n{}".format(cmd, copmpiler))
 
     # Copy the license files from wxWidgets
-    updateLicenseFiles(cfg)
+    # updateLicenseFiles(cfg)
 
     # create the package's __version__ module
     with open(opj(cfg.PKGDIR, '__version__.py'), 'w') as fid:
