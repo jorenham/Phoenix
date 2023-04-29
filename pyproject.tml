@@ -1,0 +1,14 @@
+[build-system]
+requires = [
+    "setuptools>61", 
+    "wheel",
+    "cython>=0.29.32,<0.30",
+    "appdirs", 
+    "sip==6.7.9",
+    "twine",
+    "oldest-supported-numpy", 
+    "pillow", 
+    "six",
+    "requests",
+]
+build-backend = "setuptools.build_meta"
