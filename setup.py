@@ -24,8 +24,13 @@ try:
 except ImportError:
     haveWheel = False
 
-from buildtools.config import Config, msg, opj, runcmd, canGetSOName, getSOName
-import buildtools.version as version
+try:
+    from buildtools.config import Config, msg, opj, runcmd, canGetSOName, getSOName
+    import buildtools.version as version
+except ImportError:
+    sys.path.append('./buildtools')
+    from config import Config, msg, opj, runcmd, canGetSOName, getSOName
+    import version
 
 
 # Create a buildtools.config.Configuration object
